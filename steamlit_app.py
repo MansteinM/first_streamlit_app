@@ -41,9 +41,9 @@ streamlit.header('Fruityvice Fruit Advice!')
           #streamlit.dataframe(back_from_function)
    
 #don't run anything past here while we troubleshoot
-streamlit.stop()      
-except ULRError as e:
-  streamlit.error()
+#streamlit.stop()      
+#except ULRError as e:
+ # streamlit.error()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cu = my_cnx.cursor()
