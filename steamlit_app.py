@@ -41,7 +41,7 @@ streamlit.header('Fruityvice Fruit Advice!')
           #streamlit.dataframe(back_from_function)
    
 #don't run anything past here while we troubleshoot
-#streamlit.stop()      
+streamlit.stop()      
 #except ULRError as e:
  # streamlit.error()
 
