@@ -40,8 +40,6 @@ try:
       back_from_function = get_fruityvice_data(fruit_choice)
       streamlit.dataframe(back_from_function)
   
-#don't run anything past here while we troubleshoot
-streamlit.stop()
 
 streamlit.header("The fruit load list contains:")
 #Snowflake-related functions
@@ -55,7 +53,8 @@ if streamlit.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
-       
+ #don't run anything past here while we troubleshoot
+streamlit.stop()      
 except ULRError as e:
   streamlit.error()
 
